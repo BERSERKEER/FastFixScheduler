@@ -4,12 +4,12 @@ html {
   line-height: 1.5rem;
 }
 body {
-  min-height: 100vh;
   min-height: 100dvh;
   background-color: var(--base-clr);
   color: var(--text-clr);
   display: grid;
   grid-template-columns: auto 1fr;
+  align-items: start;
 }
 #sidebar {
   box-sizing: border-box;
@@ -126,8 +126,7 @@ main p {
 .container {
   border: 1px solid var(--line-clr);
   border-radius: var(--radius-size);
-  margin-bottom: 20px;
-  padding: min(3em, 15%);
+  padding: min(2.5em, 15%);
 
   h2,
   p {
@@ -671,3 +670,17 @@ td {
   Botón con Icono
 </a>
  */
+
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-container {
+  flex-shrink: 0;
+}
+
+.separator {
+  padding: 1rem 0;
+}

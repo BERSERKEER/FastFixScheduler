@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de citas</title>
+    <title>Historial de servicios</title>
     <!-- Libraries -->
     <!-- CSS Styles -->
     <link rel="stylesheet" href="/FastFixScheduler/public/css/login_style.css">
@@ -17,20 +17,23 @@
 
 <body>
     <!--Include componenet: Sidebar -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/FastFixScheduler/app/views/shared/sidebar_employ.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/FastFixScheduler/app/views/shared/sidebar_admin.php'; ?>
     <main>
         <div class="text-content">
-            <h2>Dashboard - inicio</h2>
-            <div class="button-container">
-                <p>Agrendar cita</p>
-            </div>
+            <h2>Historial de servicios</h2>
         </div>
-
         <div class="container">
-            <h2>Citas programadas para hoy</h2>
             <div class="search-filter-container">
                 <input type="text" id="search-bar" placeholder="Buscar..." />
                 <p>Button</p>
+                <!-- Filter: Categorías -->
+                <select id="category-filter">
+                    <option value="all">Todas las categorías</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="usuarios">Usuarios</option>
+                    <option value="clientes">Clientes</option>
+                    <option value="productos">Productos</option>
+                </select>
                 <!-- Filter: Otros -->
                 <select id="sort-filter">
                     <option value="recientes">Más recientes</option>
@@ -39,13 +42,20 @@
                     <option value="menor-precio">Menor precio</option>
                 </select>
             </div>
+        </div>
+
+        <div class="text-content">
+            <h2>Historial de servicios</h2>
+        </div>
+
+        <div class="container">
             <table class="user-table">
                 <thead>
                     <tr>
                         <th>Cliente</th>
                         <th>Vehiculo</th>
                         <th>Servicio</th>
-                        <th>Hora</th>
+                        <th>Fecha</th>
                         <th>Estado</th>
                     </tr>
                 </thead>

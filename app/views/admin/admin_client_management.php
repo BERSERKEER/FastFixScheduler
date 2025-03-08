@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de citas</title>
+    <title>Gestion de clientes</title>
     <!-- Libraries -->
     <!-- CSS Styles -->
     <link rel="stylesheet" href="/FastFixScheduler/public/css/login_style.css">
@@ -17,17 +17,16 @@
 
 <body>
     <!--Include componenet: Sidebar -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/FastFixScheduler/app/views/shared/sidebar_employ.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/FastFixScheduler/app/views/shared/sidebar_admin.php'; ?>
     <main>
         <div class="text-content">
-            <h2>Dashboard - inicio</h2>
+            <h2>Gestion de clientes</h2>
             <div class="button-container">
-                <p>Agrendar cita</p>
+                <p>Agregar cliente</p>
             </div>
         </div>
 
         <div class="container">
-            <h2>Citas programadas para hoy</h2>
             <div class="search-filter-container">
                 <input type="text" id="search-bar" placeholder="Buscar..." />
                 <p>Button</p>
@@ -42,20 +41,20 @@
             <table class="user-table">
                 <thead>
                     <tr>
-                        <th>Cliente</th>
-                        <th>Vehiculo</th>
-                        <th>Servicio</th>
-                        <th>Hora</th>
-                        <th>Estado</th>
+                        <th>Nombre</th>
+                        <th>Telefono</th>
+                        <th>Email</th>
+                        <th>Direccion</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>#002</td>
                         <td>Maria López</td>
-                        <td><span class="status pending">Pendiente</span></td>
                         <td>$200.00</td>
                         <td>Finalizado</td>
+                        <td><span class="status pending">Pendiente</span></td>
                     </tr>
                 </tbody>
             </table>

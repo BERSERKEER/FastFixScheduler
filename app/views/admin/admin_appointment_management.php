@@ -17,17 +17,16 @@
 
 <body>
     <!--Include componenet: Sidebar -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/FastFixScheduler/app/views/shared/sidebar_employ.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/FastFixScheduler/app/views/shared/sidebar_admin.php'; ?>
     <main>
         <div class="text-content">
-            <h2>Dashboard - inicio</h2>
+            <h2>Gestion de citas</h2>
             <div class="button-container">
-                <p>Agrendar cita</p>
+                <p>Agregar cita</p>
             </div>
         </div>
 
         <div class="container">
-            <h2>Citas programadas para hoy</h2>
             <div class="search-filter-container">
                 <input type="text" id="search-bar" placeholder="Buscar..." />
                 <p>Button</p>
@@ -42,25 +41,34 @@
             <table class="user-table">
                 <thead>
                     <tr>
-                        <th>Cliente</th>
-                        <th>Vehiculo</th>
-                        <th>Servicio</th>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
                         <th>Hora</th>
+                        <th>Servicio</th>
                         <th>Estado</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>#002</td>
                         <td>Maria López</td>
-                        <td><span class="status pending">Pendiente</span></td>
                         <td>$200.00</td>
                         <td>Finalizado</td>
+                        <td>Finalizado</td>
+                        <td>Finalizado</td>
+                        <td><span class="status pending">Pendiente</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </main>
+    <!-- JS Scripts -->
+    <script src="/FastFixScheduler/public/js/sidebar.js"></script>
+    <script src="/FastFixScheduler/public/js/search-filter.js"></script>
+    <script src="/FastFixScheduler/public/js/table-sort.js"></script>
+
 </body>
 
 </html>

@@ -54,28 +54,28 @@
                 </button>
                 <ul class="sub-menu">
                     <div>
-                        <li><a href="/FastFixScheduler/app/views/admin/">Gestion de clientes</a></li>
-                        <li><a href="/FastFixScheduler/app/views/admin/">Gestion de empleados</a></li>
+                        <li><a href="/FastFixScheduler/app/views/admin/admin_client_management.php">Gestion de clientes</a></li>
+                        <li><a href="/FastFixScheduler/app/views/admin/admin_employee_management.php">Gestion de empleados</a></li>
                     </div>
                 </ul>
             </li>
             <!--Item 4-->
             <li>
-                <a href="/FastFixScheduler/app/views/admin/">
+                <a href="/FastFixScheduler/app/views/admin/admin_appointment_management.php">
                     <img src="/FastFixScheduler/public/images/icon/icon-table.svg" alt="Home" height="24px" width="24px">
                     <span>Gestion de citas</span>
                 </a>
             </li>
             <!--Item 5-->
             <li>
-                <a href="/FastFixScheduler/app/views/admin/">
+                <a href="/FastFixScheduler/app/views/admin/admin_service_history.php">
                     <img src="/FastFixScheduler/public/images/icon/icon-table.svg" alt="Home" height="24px" width="24px">
                     <span>Historial de servicios</span>
                 </a>
             </li>
             <!--Item 7-->
             <li>
-                <a href="/FastFixScheduler/app/views/admin/">
+                <a href="/FastFixScheduler/app/views/admin/admin_settings.php">
                     <img src="/FastFixScheduler/public/images/icon/icon-settings.svg" alt="Home" height="24px" width="24px">
                     <span>Configuracion</span>
                 </a>
